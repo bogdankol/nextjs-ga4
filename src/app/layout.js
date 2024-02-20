@@ -16,11 +16,11 @@ export default function RootLayout({ children }) {
       <Script src="/jquery.openxtag.js" type="text/javascript"></Script>  
       <Script type="text/javascript">
         
-        if(document.getElementById('neARYMwOyKtT')){
+       {` if(document.getElementById('neARYMwOyKtT')){
           console.log('Blocking Ads: No')
         } else {
           console.log('Blocking Ads: Yes')
-        }
+        }`}
         
       </Script>  
       
