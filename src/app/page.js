@@ -7,13 +7,10 @@ import { useDetectAdBlock } from "adblock-detect-react";
 
 export default function Home() {
 
-  useEffect(() => {
-    // ads()
     const adBlockDetected = useDetectAdBlock()
 
     console.log({adBlockDetected})
 
-  }, [])
   return (
     <main className={styles.main}>
       <div className={styles.description}>

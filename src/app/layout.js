@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script';
+import { AdBlockDetectedWrapper } from "adblock-detect-react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <AdBlockDetectedWrapper>
+        <body className={inter.className}>{children}</body>
+      </AdBlockDetectedWrapper>
       {/* <Script src="/jquery.openxtag.js" type="text/javascript"></Script>  
       <Script type="text/javascript">
         
