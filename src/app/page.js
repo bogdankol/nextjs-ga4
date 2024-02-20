@@ -3,11 +3,15 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { ads } from './ads';
 import { useEffect } from 'react';
+import { useDetectAdBlock } from "adblock-detect-react";
 
 export default function Home() {
 
   useEffect(() => {
-    ads()
+    // ads()
+    const adBlockDetected = useDetectAdBlock()
+
+    console.log({adBlockDetected})
 
   }, [])
   return (
