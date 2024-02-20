@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-      <Script src="/jquery.openxtag.js" type="text/javascript"></Script>  
+      {/* <Script src="/jquery.openxtag.js" type="text/javascript"></Script>  
       <Script type="text/javascript">
         
        {` if(document.getElementById('neARYMwOyKtT')){
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           console.log('Blocking Ads: Yes')
         }`}
         
-      </Script>  
+      </Script>   */}
       
       
       
