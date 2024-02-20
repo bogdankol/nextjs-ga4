@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-      {/* <Script src='./ads.js' strategy='afterInteractive' type="text/javascript"></Script> */}
-    </html>
+      <script src="/jquery.openxtag.js" type="text/javascript"></script>    </html>
   );
 }
