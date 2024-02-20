@@ -9,9 +9,5 @@ export function ads() {
   document.body.appendChild(e);
   console.log({e})
 
-  if(document.getElementById('neARYMwOyKtT')){
-    console.log('Blocking Ads: No');
-  } else {
-    console.log('Blocking Ads: Yes');
-  }
+  
 }
