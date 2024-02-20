@@ -13,9 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <AdBlockDetectedWrapper>
+      {/* <AdBlockDetectedWrapper> */}
         <body className={inter.className}>{children}</body>
-      </AdBlockDetectedWrapper>
+      {/* </AdBlockDetectedWrapper> */}
       {/* <Script src="/jquery.openxtag.js" type="text/javascript"></Script>  
       <Script type="text/javascript">
         
