@@ -15,6 +15,7 @@ export default function Content() {
 return (
   <main className={styles.main}>
     <div className={styles.description}>
+    <button>Just to check data-sending</button>
       <p>
         Get started by editing&nbsp;
         <code className={styles.code}>src/app/page.js</code>
