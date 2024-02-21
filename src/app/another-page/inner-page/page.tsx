@@ -1,7 +1,7 @@
 import Content from './content'
 
 const url = `https://nextjs-ga4.vercel.app/another-page/inner-page`
-const title = 'Title: another-page/inner-page'
+const title = 'Title: another/inner-page'
 export const metadata = {
 	metadataBase: new URL(`https://nextjs-ga4.vercel.app`),
 	title,
