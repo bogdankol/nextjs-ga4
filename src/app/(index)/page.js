@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { ads } from './ads';
 import { useEffect } from 'react';
 import { useDetectAdBlock } from "adblock-detect-react";
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -98,6 +99,13 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+
+        <Link href={'/another-page'}>/another-page</Link>
+        <Link href={'/another-page/inner-page'}>/another-page/inner-page</Link>
+        <Link href={'/another-page2'}>/another-page2</Link>
+        <Link href={'/another-page2/inner-page'}>/another-page2/inner-page</Link>
+        <Link href={'/another-page3'}>/another-page3</Link>
+        <Link href={'/another-page3/inner-page'}>/another-page3/inner-page</Link>
       </div>
     </main>
   );

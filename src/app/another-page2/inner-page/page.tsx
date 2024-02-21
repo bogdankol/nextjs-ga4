@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default () => {
@@ -21,6 +22,8 @@ export default () => {
           onClick={() => setResult(result - 1)}
         >I am button with counter decrement</button>
 			</div>
+
+			<Link href={'/'}>/main-page</Link>
 		</>
 	)
 }
