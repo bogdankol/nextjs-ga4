@@ -14,7 +14,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			{/* <AdBlockDetectedWrapper> */}
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXMG3SSF"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        {children}
+      </body>
 			{/* </AdBlockDetectedWrapper> */}
 			{/* <Script src="/jquery.openxtag.js" type="text/javascript"></Script>  
       <Script type="text/javascript">
