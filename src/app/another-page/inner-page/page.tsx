@@ -33,7 +33,7 @@ export const metadata = {
 	}
 }
 
-export default () => {
+export default function Page () {
 	return (
 		<Content />
 	)

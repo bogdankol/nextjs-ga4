@@ -33,11 +33,7 @@ export const metadata = {
 	}
 }
 
-export default function Home() {
-
-    // const adBlockDetected = useDetectAdBlock()
-
-    // console.log({adBlockDetected})
+export default function Page () {
 
   return (
     <Content />
