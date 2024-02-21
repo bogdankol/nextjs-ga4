@@ -2,6 +2,39 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
+const url = `https://nextjs-ga4.vercel.app/another-page`
+const title = 'Title: another-page'
+export const metadata = {
+	metadataBase: new URL(`https://nextjs-ga4.vercel.app`),
+	title,
+	description: 'description',
+	alternates: {
+		canonical: url
+	},
+	openGraph: {
+		title,
+		description: 'description',
+		url,
+		siteName: 'VyOS',
+		images: [
+			{
+				url: 'img'
+			}
+		],
+		locale: 'en_US',
+		type: 'website'
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			'max-snippet': -1,
+			'max-image-preview': 'large',
+			'max-video-preview': -1
+		}
+	}
+}
+
 export default () => {
 	const [result, setResult] = useState<number>(0)
 
