@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import { AdBlockDetectedWrapper } from 'adblock-detect-react'
-import GA4 from '@/components/GA4'
+import GA4 from '../components/GA4'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,6 +11,8 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			{/* <AdBlockDetectedWrapper> */}
 			<body className={inter.className}>
+
+        <GA4 />
 
 <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXMG3SSF"
         height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
