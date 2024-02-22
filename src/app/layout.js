@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         
       </Script>   */}
 
-			{/* <Script
+			<Script
 				async
 				src='https://www.googletagmanager.com/gtag/js?id=G-P2F6B9SXNT'
         id="asd"
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         gtag('js', new Date());
 
         gtag('config', 'G-P2F6B9SXNT');`}
-			</Script> */}
+			</Script>
 
       <Script strategy='afterInteractive' id="qwe">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
