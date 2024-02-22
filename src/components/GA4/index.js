@@ -19,7 +19,7 @@ export default function GA4() {
       page: pathname,
       title: document.title
     })
-  }, [isGA4Enabled, pathname])
+  }, [pathname])
 
   return null
 
