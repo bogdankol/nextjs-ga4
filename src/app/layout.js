@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import { AdBlockDetectedWrapper } from 'adblock-detect-react'
+import GA4 from '@/components/GA4'
 
 const inter = Inter({ subsets: ['latin'] })
 
