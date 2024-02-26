@@ -26,7 +26,8 @@ export default () => {
 					I am button with counter decrement
 				</button>
 			</div>
-			<button>Just to check data-sending</button>
+			<button>button to track 1</button>
+    <button>button to track 2</button>
 			<Link href={'/'}>/main-page</Link>
 		</>
 	)
