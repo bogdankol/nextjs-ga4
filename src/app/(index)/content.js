@@ -107,6 +107,9 @@ return (
       <Link href={'/another-page2/inner-page'}>/another-page2/inner-page</Link>
       <Link href={'/another-page3'}>/another-page3</Link>
       <Link href={'/another-page3/inner-page'}>/another-page3/inner-page</Link>
+      <Link href={'/scroll-page1'}>/scroll-page1</Link>
+      <Link href={'/scroll-page2'}>/scroll-page2</Link>
+
     </div>
   </main>
 );
