@@ -17,6 +17,8 @@ const userHasAdblock = adbDetector.detect() // detect adblock it return ture or 
 
       <main className="py-12 container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div className="lg:w-3/4 xl:w-2/4 mx-auto"> {children} </div>
+
+        <footer>JUST TO BE NOT EMPTY</footer>
       </main>
     </>
   )
