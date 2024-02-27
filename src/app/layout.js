@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
 			{/* <AdBlockDetectedWrapper> */}
 			<body className={inter.className}>
 
-        <GA4 />
+        {/* <GA4 /> */}
 
 <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXMG3SSF"
         height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
