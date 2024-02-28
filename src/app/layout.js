@@ -55,6 +55,14 @@ export default function RootLayout({ children }) {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-PXMG3SSF');`}
       </Script>
+
+      <Script> 
+        {`// Reset Scroll Depth on history change 
+        window.addEventListener('popstate', function() { 
+          window.\_gaq.push(\['\_trackEvent', 'Scroll Depth', 'Reset', 
+            location.pathname + location.search + location.hash, , true\]); 
+          });`} 
+      </Script>
 		</html>
 	)
 }
