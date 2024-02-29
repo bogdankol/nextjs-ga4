@@ -31,7 +31,7 @@ export default () => {
       setReached25Percent(true);
 			window.dataLayer.push({
 				event: 'custom_scroll_250',
-				scrollPercent: 25,
+				scrollThreshold: 25,
 			});
     }
     if (scrollPosition >= halfHeight && !reached50Percent) {
@@ -39,7 +39,7 @@ export default () => {
       setReached50Percent(true);
 			window.dataLayer.push({
 				event: 'custom_scroll_500',
-				scrollPercent: 50,
+				scrollThreshold: 50,
 			});
     }
     if (scrollPosition >= threeQuarterHeight && !reached75Percent) {
@@ -47,7 +47,7 @@ export default () => {
       setReached75Percent(true);
 			window.dataLayer.push({
 				event: 'custom_scroll_750',
-				scrollPercent: 75,
+				scrollThreshold: 75,
 			});
     }
     if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
@@ -55,7 +55,7 @@ export default () => {
       setReached90Percent(true);
 			window.dataLayer.push({
 				event: 'custom_scroll_900',
-				scrollPercent: 90,
+				scrollThreshold: 90,
 			});
     }
   }, [scrollPosition]);
