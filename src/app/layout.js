@@ -44,9 +44,7 @@ export default function RootLayout({ children }) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-P2F6B9SXNT', {
-          page_path: window.location.pathname
-        });`}
+        gtag('config', 'G-P2F6B9SXNT');`}
 			</Script>
 
       <Script strategy='afterInteractive' id="qwe">
