@@ -29,34 +29,34 @@ export default () => {
     if (scrollPosition >= quarterHeight && !reached25Percent) {
       console.log('You reached 25% of the page height.');
       setReached25Percent(true);
-			sendGAEvent({
+			window.dataLayer.push({
 				event: 'custom_scroll',
-				scrollPercent: 25
-			})
+				scrollPercent: 25,
+			});
     }
     if (scrollPosition >= halfHeight && !reached50Percent) {
       console.log('You reached 50% of the page height.');
       setReached50Percent(true);
-			sendGAEvent({
+			window.dataLayer.push({
 				event: 'custom_scroll',
-				scrollPercent: 50
-			})
+				scrollPercent: 50,
+			});
     }
     if (scrollPosition >= threeQuarterHeight && !reached75Percent) {
       console.log('You reached 75% of the page height.');
       setReached75Percent(true);
-			sendGAEvent({
+			window.dataLayer.push({
 				event: 'custom_scroll',
-				scrollPercent: 75
-			})
+				scrollPercent: 75,
+			});
     }
     if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
       console.log('You reached 90% of the page height.');
       setReached90Percent(true);
-			sendGAEvent({
+			window.dataLayer.push({
 				event: 'custom_scroll',
-				scrollPercent: 90
-			})
+				scrollPercent: 90,
+			});
     }
   }, [scrollPosition]);
 
