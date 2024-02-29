@@ -44,7 +44,9 @@ export default function RootLayout({ children }) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-P2F6B9SXNT');`}
+        gtag('config', 'G-P2F6B9SXNT', {
+          scroll_depth: 50
+        });`}
 			</Script>
 
       <Script strategy='afterInteractive' id="qwe">
