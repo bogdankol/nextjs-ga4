@@ -13,13 +13,13 @@ export default function GA4() {
     ReactGA.initialize(measurementId)
   }, [])
 
-  useEffect(() => {
-    ReactGA.send({
-      hitType: 'pageview',
-      page: pathname,
-      title: document.title
-    })
-  }, [pathname])
+  // useEffect(() => {
+  //   ReactGA.send({
+  //     hitType: 'pageview',
+  //     page: pathname,
+  //     title: document.title
+  //   })
+  // }, [pathname])
 
   return null
 
