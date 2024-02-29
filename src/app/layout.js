@@ -3,10 +3,12 @@ import './globals.css'
 import Script from 'next/script'
 import { AdBlockDetectedWrapper } from 'adblock-detect-react'
 import GA4 from '../components/GA4'
+import { GoogleAnalytics, sendGAEvent } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
+
 	return (
 		<html lang='en'>
 			{/* <AdBlockDetectedWrapper> */}
@@ -57,13 +59,16 @@ export default function RootLayout({ children }) {
         })(window,document,'script','dataLayer','GTM-PXMG3SSF');`}
       </Script>
 
-      <Script> 
+      {/* <Script> 
         {`// Reset Scroll Depth on history change 
         window.addEventListener('popstate', function() { 
           window._gaq.push(['_trackEvent', 'Scroll Depth', 'Reset', 
             location.pathname + location.search + location.hash, , true]); 
           });`} 
-      </Script>
+      </Script> */}
+
+      {/* to track page views */}
+      {/* <GoogleAnalytics gaId="G-P2F6B9SXNT" /> */}
 		</html>
 	)
 }
