@@ -21,16 +21,16 @@ export default () => {
     const threeQuarterHeight = pageHeight * 0.75;
     const ninetyPercentHeight = pageHeight * 0.9;
 
-    if (scrollPosition >= quarterHeight) {
+    if (scrollPosition === quarterHeight) {
       console.log('You reached 25% of the page height.');
     }
-    if (scrollPosition >= halfHeight) {
+    if (scrollPosition === halfHeight) {
       console.log('You reached 50% of the page height.');
     }
-    if (scrollPosition >= threeQuarterHeight) {
+    if (scrollPosition === threeQuarterHeight) {
       console.log('You reached 75% of the page height.');
     }
-    if (scrollPosition >= ninetyPercentHeight) {
+    if (scrollPosition === ninetyPercentHeight) {
       console.log('You reached 90% of the page height.');
     }
   }, [scrollPosition]);
