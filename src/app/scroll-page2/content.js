@@ -28,18 +28,34 @@ export default () => {
     if (scrollPosition >= quarterHeight && !reached25Percent) {
       console.log('You reached 25% of the page height.');
       setReached25Percent(true);
+			sendGAEvent({
+				event: 'userScroll',
+				scrollPercent: 25
+			})
     }
     if (scrollPosition >= halfHeight && !reached50Percent) {
       console.log('You reached 50% of the page height.');
       setReached50Percent(true);
+			sendGAEvent({
+				event: 'userScroll',
+				scrollPercent: 50
+			})
     }
     if (scrollPosition >= threeQuarterHeight && !reached75Percent) {
       console.log('You reached 75% of the page height.');
       setReached75Percent(true);
+			sendGAEvent({
+				event: 'userScroll',
+				scrollPercent: 75
+			})
     }
     if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
       console.log('You reached 90% of the page height.');
       setReached90Percent(true);
+			sendGAEvent({
+				event: 'userScroll',
+				scrollPercent: 90
+			})
     }
   }, [scrollPosition]);
 
