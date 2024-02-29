@@ -5,6 +5,10 @@ import s from './styles.module.css'
 
 export default () => {
 	const [scrollPosition, setScrollPosition] = useState(0)
+	const [reached25Percent, setReached25Percent] = useState(false);
+  const [reached50Percent, setReached50Percent] = useState(false);
+  const [reached75Percent, setReached75Percent] = useState(false);
+  const [reached90Percent, setReached90Percent] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
       const position = window.scrollY;
@@ -21,17 +25,21 @@ export default () => {
     const threeQuarterHeight = pageHeight * 0.75;
     const ninetyPercentHeight = pageHeight * 0.9;
 
-    if (scrollPosition === quarterHeight) {
+    if (scrollPosition >= quarterHeight && !reached25Percent) {
       console.log('You reached 25% of the page height.');
+      setReached25Percent(true);
     }
-    if (scrollPosition === halfHeight) {
+    if (scrollPosition >= halfHeight && !reached50Percent) {
       console.log('You reached 50% of the page height.');
+      setReached50Percent(true);
     }
-    if (scrollPosition === threeQuarterHeight) {
+    if (scrollPosition >= threeQuarterHeight && !reached75Percent) {
       console.log('You reached 75% of the page height.');
+      setReached75Percent(true);
     }
-    if (scrollPosition === ninetyPercentHeight) {
+    if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
       console.log('You reached 90% of the page height.');
+      setReached90Percent(true);
     }
   }, [scrollPosition]);
 
