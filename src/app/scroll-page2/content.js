@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import s from './styles.module.css'
+import { sendGAEvent } from '@next/third-parties/google'
 
 export default () => {
 	const [scrollPosition, setScrollPosition] = useState(0)
