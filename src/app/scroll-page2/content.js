@@ -30,7 +30,7 @@ export default () => {
       console.log('You reached 25% of the page height.');
       setReached25Percent(true);
 			sendGAEvent({
-				event: 'userScroll',
+				event: 'custom_scroll',
 				scrollPercent: 25
 			})
     }
@@ -38,7 +38,7 @@ export default () => {
       console.log('You reached 50% of the page height.');
       setReached50Percent(true);
 			sendGAEvent({
-				event: 'userScroll',
+				event: 'custom_scroll',
 				scrollPercent: 50
 			})
     }
@@ -46,7 +46,7 @@ export default () => {
       console.log('You reached 75% of the page height.');
       setReached75Percent(true);
 			sendGAEvent({
-				event: 'userScroll',
+				event: 'custom_scroll',
 				scrollPercent: 75
 			})
     }
@@ -54,7 +54,7 @@ export default () => {
       console.log('You reached 90% of the page height.');
       setReached90Percent(true);
 			sendGAEvent({
-				event: 'userScroll',
+				event: 'custom_scroll',
 				scrollPercent: 90
 			})
     }
