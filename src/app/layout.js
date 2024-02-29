@@ -59,8 +59,8 @@ export default function RootLayout({ children }) {
       <Script> 
         {`// Reset Scroll Depth on history change 
         window.addEventListener('popstate', function() { 
-          window.\_gaq.push(\['\_trackEvent', 'Scroll Depth', 'Reset', 
-            location.pathname + location.search + location.hash, , true\]); 
+          window._gaq.push(['_trackEvent', 'Scroll Depth', 'Reset', 
+            location.pathname + location.search + location.hash, , true]); 
           });`} 
       </Script>
 		</html>
