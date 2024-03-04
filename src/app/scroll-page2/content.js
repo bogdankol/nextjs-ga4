@@ -30,7 +30,7 @@ export default () => {
       console.log('You reached 25% of the page height.');
       setReached25Percent(true);
 			window.dataLayer.push({
-				event: 'gtm.scrollDepth',
+				event: 'gtm.scrollDepth11111',
 				gtm: {
 					scrollThreshold: 25
 				}
@@ -40,7 +40,7 @@ export default () => {
       console.log('You reached 50% of the page height.');
       setReached50Percent(true);
 			window.dataLayer.push({
-				event: 'gtm.scrollDepth',
+				event: 'gtm.scrollDepth11111',
 				gtm: {
 					scrollThreshold: 50
 				}
@@ -50,7 +50,7 @@ export default () => {
       console.log('You reached 75% of the page height.');
       setReached75Percent(true);
 			window.dataLayer.push({
-				event: 'gtm.scrollDepth',
+				event: 'gtm.scrollDepth11111',
 				gtm: {
 					scrollThreshold: 75
 				}
@@ -60,7 +60,7 @@ export default () => {
       console.log('You reached 90% of the page height.');
       setReached90Percent(true);
 			window.dataLayer.push({
-				event: 'gtm.scrollDepth',
+				event: 'gtm.scrollDepth11111',
 				gtm: {
 					scrollThreshold: 90
 				}
