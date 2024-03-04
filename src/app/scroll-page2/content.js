@@ -33,7 +33,8 @@ export default () => {
 				event: 'custom_scroll_250',
 				gtm: {
 					scrollThreshold: 25
-				}
+				},
+				percentScrolled: 25
 			});
     }
     if (scrollPosition >= halfHeight && !reached50Percent) {
@@ -43,7 +44,8 @@ export default () => {
 				event: 'custom_scroll_500',
 				gtm: {
 					scrollThreshold: 50
-				}
+				},
+				percentScrolled: 50
 			});
     }
     if (scrollPosition >= threeQuarterHeight && !reached75Percent) {
@@ -53,7 +55,8 @@ export default () => {
 				event: 'custom_scroll_750',
 				gtm: {
 					scrollThreshold: 75
-				}
+				},
+				percentScrolled: 75
 			});
     }
     if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
@@ -63,7 +66,8 @@ export default () => {
 				event: 'custom_scroll_900',
 				gtm: {
 					scrollThreshold: 90
-				}
+				},
+				percentScrolled: 90
 			});
     }
 
