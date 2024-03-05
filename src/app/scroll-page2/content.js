@@ -29,45 +29,73 @@ export default () => {
     if (scrollPosition >= quarterHeight && !reached25Percent) {
       console.log('You reached 25% of the page height.');
       setReached25Percent(true);
-			window.dataLayer.push({
-				event: 'custom_scroll_250',
-				gtm: {
+			// window.dataLayer.push({
+			// 	event: 'custom_scroll_250',
+			// 	gtm: {
+			// 		scrollThreshold: 25
+			// 	},
+			// 	percentScrolled: 25
+			// });
+			gtag('event', 'custom_scroll_250', {
+				'event_category': 'Custom Events',
+				'event_label': 'User scrolled 25% of the page',
+				'gtm': {
 					scrollThreshold: 25
-				},
-				percentScrolled: 25
+				}
 			});
     }
     if (scrollPosition >= halfHeight && !reached50Percent) {
       console.log('You reached 50% of the page height.');
       setReached50Percent(true);
-			window.dataLayer.push({
-				event: 'custom_scroll_500',
-				gtm: {
+			// window.dataLayer.push({
+			// 	event: 'custom_scroll_500',
+			// 	gtm: {
+			// 		scrollThreshold: 50
+			// 	},
+			// 	percentScrolled: 50
+			// });
+			gtag('event', 'custom_scroll_500', {
+				'event_category': 'Custom Events',
+				'event_label': 'User scrolled 50% of the page',
+				'gtm': {
 					scrollThreshold: 50
-				},
-				percentScrolled: 50
+				}
 			});
     }
     if (scrollPosition >= threeQuarterHeight && !reached75Percent) {
       console.log('You reached 75% of the page height.');
       setReached75Percent(true);
-			window.dataLayer.push({
-				event: 'custom_scroll_750',
-				gtm: {
+			// window.dataLayer.push({
+			// 	event: 'custom_scroll_750',
+			// 	gtm: {
+			// 		scrollThreshold: 75
+			// 	},
+			// 	percentScrolled: 75
+			// });
+			gtag('event', 'custom_scroll_750', {
+				'event_category': 'Custom Events',
+				'event_label': 'User scrolled 75% of the page',
+				'gtm': {
 					scrollThreshold: 75
-				},
-				percentScrolled: 75
+				}
 			});
     }
     if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
       console.log('You reached 90% of the page height.');
       setReached90Percent(true);
-			window.dataLayer.push({
-				event: 'custom_scroll_900',
-				gtm: {
+			// window.dataLayer.push({
+			// 	event: 'custom_scroll_900',
+			// 	gtm: {
+			// 		scrollThreshold: 90
+			// 	},
+			// 	percentScrolled: 90
+			// });
+			gtag('event', 'custom_scroll_900', {
+				'event_category': 'Custom Events',
+				'event_label': 'User scrolled 90% of the page',
+				'gtm': {
 					scrollThreshold: 90
-				},
-				percentScrolled: 90
+				}
 			});
     }
 
