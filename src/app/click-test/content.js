@@ -8,7 +8,7 @@ export default () => {
 		if (typeof window.dataLayer !== 'undefined') {
 			window.dataLayer.push({
 				event: `custom_click_from_code`,
-				value: 'User clicked custom button',
+				value: 'User clicked custom button DataLayer',
 			});
 			// gtag('event', 'custom_click_from_code', {
 			// 	'event_category': 'Custom Events',
