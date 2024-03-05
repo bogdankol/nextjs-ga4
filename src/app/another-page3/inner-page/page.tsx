@@ -8,20 +8,20 @@ export const metadata = {
 	title,
 	description: 'description',
 	alternates: {
-		canonical: url
+		canonical: url,
 	},
 	openGraph: {
 		title,
 		description: 'description',
 		url,
-		siteName: 'VyOS',
+		siteName: 'testSite',
 		images: [
 			{
-				url: 'img'
-			}
+				url: 'img',
+			},
 		],
 		locale: 'en_US',
-		type: 'website'
+		type: 'website',
 	},
 	robots: {
 		index: true,
@@ -29,13 +29,11 @@ export const metadata = {
 		googleBot: {
 			'max-snippet': -1,
 			'max-image-preview': 'large',
-			'max-video-preview': -1
-		}
-	}
+			'max-video-preview': -1,
+		},
+	},
 }
 
-export default function Page () {
-	return (
-		<Content/>
-	)
+export default function Page() {
+	return <Content />
 }

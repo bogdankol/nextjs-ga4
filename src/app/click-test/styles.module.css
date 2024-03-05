@@ -1,0 +1,14 @@
+.container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  border: 5px solid green;
+}
+
+.btn {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
