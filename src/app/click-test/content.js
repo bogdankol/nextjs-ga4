@@ -7,7 +7,7 @@ export default () => {
 	function sendEventToGA4(eventName, eventValue) {
 		if (typeof window.dataLayer !== 'undefined') {
 			window.dataLayer.push({
-				event: eventName,
+				event: `button_clicked`,
 				value: eventValue,
 			});
 		} else {
