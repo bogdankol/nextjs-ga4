@@ -9,7 +9,7 @@ export default () => {
 	const [reached25Percent, setReached25Percent] = useState(false);
   const [reached50Percent, setReached50Percent] = useState(false);
   const [reached75Percent, setReached75Percent] = useState(false);
-  const [reached90Percent, setReached90Percent] = useState(false);
+  const [reached85Percent, setReached85Percent] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
       const position = window.scrollY;
@@ -24,7 +24,7 @@ export default () => {
     const quarterHeight = pageHeight * 0.25;
     const halfHeight = pageHeight * 0.5;
     const threeQuarterHeight = pageHeight * 0.75;
-    const ninetyPercentHeight = pageHeight * 0.9;
+    const ninetyPercentHeight = pageHeight * 0.85;
 
     if (scrollPosition >= quarterHeight && !reached25Percent) {
       console.log('You reached 25% of the page height.');
@@ -74,9 +74,9 @@ export default () => {
 				scrollThreshold: 75
 			});
     }
-    if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
+    if (scrollPosition >= ninetyPercentHeight && !reached85Percent) {
       console.log('You reached 85% of the page height.');
-      setReached90Percent(true);
+      setReached85Percent(true);
 			// window.dataLayer.push({
 			// 	event: 'custom_scroll_900',
 			// 	gtm: {
@@ -87,7 +87,7 @@ export default () => {
 			gtag('event', 'page_scroll_85', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 85% of the page',
-				scrollThreshold: 90
+				scrollThreshold: 85
 			});
     }
 

@@ -16,8 +16,8 @@ export default function RootLayout({ children }) {
 
         <GA4 />
 
-{/* <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXMG3SSF"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript> */}
+<noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXMG3SSF"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
 
 
         {children}
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         
       </Script>   */}
 
-			{/* <Script
+			<Script
 				strategy='lazyOnload'
 				src='https://www.googletagmanager.com/gtag/js?id=G-P2F6B9SXNT'
         id="G-P2F6B9SXNT"
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 
         gtag('config', 'G-P2F6B9SXNT', {
         });`}
-			</Script> */}
+			</Script>
 
       <Script strategy='afterInteractive' id="qwe">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
