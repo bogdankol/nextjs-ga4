@@ -36,7 +36,7 @@ export default () => {
 			// 	},
 			// 	percentScrolled: 25
 			// });
-			gtag('event', 'custom_scroll_250', {
+			gtag('event', 'page_scroll_25', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 25% of the page',
 				scrollThreshold: 25
@@ -52,7 +52,7 @@ export default () => {
 			// 	},
 			// 	percentScrolled: 50
 			// });
-			gtag('event', 'custom_scroll_500', {
+			gtag('event', 'page_scroll_50', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 50% of the page',
 				scrollThreshold: 50
@@ -68,7 +68,7 @@ export default () => {
 			// 	},
 			// 	percentScrolled: 75
 			// });
-			gtag('event', 'custom_scroll_750', {
+			gtag('event', 'page_scroll_75', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 75% of the page',
 				scrollThreshold: 75
@@ -84,7 +84,7 @@ export default () => {
 			// 	},
 			// 	percentScrolled: 90
 			// });
-			gtag('event', 'custom_scroll_900', {
+			gtag('event', 'page_scroll_90', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 90% of the page',
 				scrollThreshold: 90
