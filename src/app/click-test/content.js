@@ -10,7 +10,7 @@ export default () => {
 			// 	event: `button_clicked`,
 			// 	value: eventValue,
 			// });
-			gtag('event', 'custom-custom_click_from_code', {
+			gtag('event', 'custom_click_from_code', {
 				'event_category': 'Custom Events',
 				'event_label': 'User clicked custom button'
 			});
