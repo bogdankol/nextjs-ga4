@@ -39,9 +39,7 @@ export default () => {
 			gtag('event', 'custom_scroll_250', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 25% of the page',
-				'gtm': {
-					scrollThreshold: 25
-				}
+				scrollThreshold: 25
 			});
     }
     if (scrollPosition >= halfHeight && !reached50Percent) {
@@ -57,9 +55,7 @@ export default () => {
 			gtag('event', 'custom_scroll_500', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 50% of the page',
-				'gtm': {
-					scrollThreshold: 50
-				}
+				scrollThreshold: 50
 			});
     }
     if (scrollPosition >= threeQuarterHeight && !reached75Percent) {
@@ -75,9 +71,7 @@ export default () => {
 			gtag('event', 'custom_scroll_750', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 75% of the page',
-				'gtm': {
-					scrollThreshold: 75
-				}
+				scrollThreshold: 75
 			});
     }
     if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
@@ -93,9 +87,7 @@ export default () => {
 			gtag('event', 'custom_scroll_900', {
 				'event_category': 'Custom Events',
 				'event_label': 'User scrolled 90% of the page',
-				'gtm': {
-					scrollThreshold: 90
-				}
+				scrollThreshold: 90
 			});
     }
 
