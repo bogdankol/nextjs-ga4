@@ -111,7 +111,7 @@ return (
       <Link href={'/another-page3/inner-page'}>/another-page3/inner-page</Link>
       <Link href={'/scroll-page1'}>/scroll-page1</Link>
       <Link href={'/scroll-page2'}>/scroll-page2</Link>
-
+      <Link href={'/click-test'}>/click-test</Link>
     </div>
   </main>
 );
