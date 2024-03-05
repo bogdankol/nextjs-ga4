@@ -6,9 +6,13 @@ import s from './styles.module.css'
 export default () => {
 	function sendEventToGA4(eventName, eventValue) {
 		if (typeof window.dataLayer !== 'undefined') {
-			window.dataLayer.push({
-				event: `button_clicked`,
-				value: eventValue,
+			// window.dataLayer.push({
+			// 	event: `button_clicked`,
+			// 	value: eventValue,
+			// });
+			gtag('event', 'custom-custom_click_from_code', {
+				'event_category': 'Custom Events',
+				'event_label': 'User clicked custom button'
 			});
 		} else {
 			console.error("Data layer not found. GA4 event not sent.");
