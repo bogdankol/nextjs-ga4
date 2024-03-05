@@ -75,7 +75,7 @@ export default () => {
 			});
     }
     if (scrollPosition >= ninetyPercentHeight && !reached90Percent) {
-      console.log('You reached 90% of the page height.');
+      console.log('You reached 85% of the page height.');
       setReached90Percent(true);
 			// window.dataLayer.push({
 			// 	event: 'custom_scroll_900',
@@ -84,9 +84,9 @@ export default () => {
 			// 	},
 			// 	percentScrolled: 90
 			// });
-			gtag('event', 'page_scroll_90', {
+			gtag('event', 'page_scroll_85', {
 				'event_category': 'Custom Events',
-				'event_label': 'User scrolled 90% of the page',
+				'event_label': 'User scrolled 85% of the page',
 				scrollThreshold: 90
 			});
     }
