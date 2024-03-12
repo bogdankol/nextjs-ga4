@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import s from './styles.module.css'
+import Youtube from './Youtube'
 
 export default () => {
 
@@ -16,6 +17,8 @@ export default () => {
     <button>button to track 2</button>
 				<Link href={'/'}>/main-page</Link>
 			</div>
+
+			<Youtube />
 			
 		</>
 	)

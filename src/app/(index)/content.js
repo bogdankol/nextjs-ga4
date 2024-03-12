@@ -112,6 +112,7 @@ return (
       <Link href={'/scroll-page1'}>/scroll-page1</Link>
       <Link href={'/scroll-page2'}>/scroll-page2</Link>
       <Link href={'/click-test'}>/click-test</Link>
+      <Link href={'/video-test'}>/click-test</Link>
     </div>
   </main>
 );
