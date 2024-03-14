@@ -1,7 +1,7 @@
 import playIcon from './img/play-icon.svg'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import s from './index.module.sass'
+import s from './styles.module.css'
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false })
 
 interface IProps {
@@ -12,13 +12,7 @@ interface IProps {
   }
 }
 
-export default function Youtube({
-  data: {
-    src,
-    header,
-    text
-  }
-}: IProps) {
+export default function Youtube() {
 
 
   return <section className={s.section}>
@@ -52,7 +46,7 @@ export default function Youtube({
           }}
         />
 
-        <p>{text}</p>
+        <p>I am video-test page</p>
 
       </div>
 
