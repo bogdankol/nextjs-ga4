@@ -22,7 +22,7 @@ export default function Youtube() {
       <div className={s.div}>
 
         <ReactPlayer
-          url='https://www.youtube.com/watch?v=njDDtuH3074'
+          url='https://www.youtube.com/watch?v=EfZIgAVVCNI'
           light='/images/pages/platforms/vyos-on-zededa/zededa-vyos-video-cover.jpg'
           playIcon={
             <Image
