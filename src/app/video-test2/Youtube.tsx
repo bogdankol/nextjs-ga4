@@ -5,52 +5,46 @@ import s from './styles.module.css'
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false })
 
 interface IProps {
-  data: {
-    src: string
-    header: string
-    text: string
-  }
+	data: {
+		src: string
+		header: string
+		text: string
+	}
 }
 
 export default function Youtube() {
+	return (
+		<section className={s.section}>
+			<div className={s.wrapper}>
+				<div className={s.div}>
+					<ReactPlayer
+						url='https://youtu.be/EfZIgAVVCNI?si=2FE8xF62VmIp7frv'
+						light='/images/pages/platforms/vyos-on-zededa/zededa-vyos-video-cover.jpg'
+						playIcon={
+							<Image
+								src={playIcon}
+								width={64}
+								height={64}
+								alt='Youtube'
+							/>
+						}
+						playing={true}
+						controls
+						height={406}
+						width='100%'
+						config={{
+							youtube: {
+								playerVars: {
+									modestbranding: 1, // disable youtube logo
+									fs: 0, // disables fullscreen
+								},
+							},
+						}}
+					/>
 
-
-  return <section className={s.section}>
-
-    <div className={s.wrapper}>
-
-      <div className={s.div}>
-
-        <ReactPlayer
-          url='https://www.youtube.com/watch?v=EfZIgAVVCNI'
-          light='/images/pages/platforms/vyos-on-zededa/zededa-vyos-video-cover.jpg'
-          playIcon={
-            <Image
-              src={playIcon}
-              width={64}
-              height={64}
-              alt='Youtube'
-            />
-          }
-          playing={true}
-          controls
-          height={406}
-          width='100%'
-          config={{
-            youtube: {
-              playerVars: {
-                modestbranding: 1, // disable youtube logo
-                fs: 0 // disables fullscreen
-              },
-            },
-          }}
-        />
-
-        <p>I am video-test1 page</p>
-
-      </div>
-
-    </div>
-
-  </section>
+					<p>I am video-test1 page</p>
+				</div>
+			</div>
+		</section>
+	)
 }
