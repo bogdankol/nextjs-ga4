@@ -1,7 +1,7 @@
 import Content from './content'
 
-const url = `https://nextjs-ga4.vercel.app/video-test`
-const title = 'Title: video-test'
+const url = `https://nextjs-ga4.vercel.app/video-test2`
+const title = 'Title: video-test2'
 export const metadata = {
 	metadataBase: new URL(`https://nextjs-ga4.vercel.app`),
 	title,
