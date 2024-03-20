@@ -9,6 +9,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: white;
 
 }
 
@@ -21,9 +22,10 @@
 
 .submitBtn {
   width: 80px;
-  height: 40p;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   background: linear-gradient(135deg, rgba(255,247,226,1) 0%, rgba(255,244,225,1) 100%);
 }
