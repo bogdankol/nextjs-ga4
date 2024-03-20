@@ -29,7 +29,9 @@
   border: none;
   background: linear-gradient(135deg, rgba(255,247,226,1) 0%, rgba(255,244,225,1) 100%);
 
-  &::hover {
-    transform: scale(1.1);
-  }
+  
+}
+
+.submitBtn:hover {
+  transform: scale(1.1);
 }
