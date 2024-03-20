@@ -22,7 +22,6 @@ return (
         <input className='input' type='email' placeholder='type an email' />
         <input className='input' type='password' placeholder='type an password' />
         <input className='input' type='textarea' placeholder='type a comment'/>
- className='input'
         <button type='submit' className='submitBtn'>submit</button>
       </form>
 
