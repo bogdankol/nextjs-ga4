@@ -114,6 +114,7 @@ return (
       <Link href={'/click-test'}>/click-test</Link>
       <Link href={'/video-test1'}>/video-test1</Link>
       <Link href={'/video-test2'}>/video-test2</Link>
+      <Link href={'/form-test1'}>/form-test1</Link>
 
     </div>
   </main>
