@@ -27,7 +27,7 @@ export default function Content() {
 
 				<Link href={'/'}>/main-page</Link>
 
-				<form
+				{/* <form
 					autoComplete=''
 					className={styles.form}
 					onSubmit={submitHandler}
@@ -49,14 +49,14 @@ export default function Content() {
 						type='textarea'
 						placeholder='type a comment'
             onChange={(e: any) => setTextarea(e.target.value)}
-					/>
+					/> */}
 					<button
 						type='submit'
 						className={styles.submitBtn}
 					>
 						submit
 					</button>
-				</form>
+				{/* </form> */}
 			</div>
 		</main>
 	)
