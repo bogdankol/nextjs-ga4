@@ -24,44 +24,45 @@ export default function Content() {
 
 	return (
 		<main className={styles.main}>
-			<div className={styles.description}>
+			<div className={`${
+				styles.description +
+				validationPassed ? styles.validationPassed : ''
+			}`}>
 				<button>button to track 1</button>
 				<button>button to track 2</button>
 
 				<Link href={'/'}>/main-page</Link>
 
-				<div className={validationPassed ? styles.validationPassed : ''}>
-					<form
-						autoComplete=''
-						className={styles.form}
-						onSubmit={submitHandler}
+				<form
+					autoComplete=''
+					className={styles.form}
+					onSubmit={submitHandler}
+				>
+					<input
+						className={styles.input}
+						type='email'
+						placeholder='type an email'
+            onChange={(e: any) => setEmail(e.target.value)}
+					/>
+					<input
+						className={styles.input}
+						type='password'
+						placeholder='type an password'
+            onChange={(e: any) => setPassword(e.target.value)}
+					/>
+					<input
+						className={styles.input}
+						type='textarea'
+						placeholder='type a comment'
+            onChange={(e: any) => setTextarea(e.target.value)}
+					/>
+					<button
+						type='submit'
+						className={styles.submitBtn}
 					>
-						<input
-							className={styles.input}
-							type='email'
-							placeholder='type an email'
-							onChange={(e: any) => setEmail(e.target.value)}
-						/>
-						<input
-							className={styles.input}
-							type='password'
-							placeholder='type an password'
-							onChange={(e: any) => setPassword(e.target.value)}
-						/>
-						<input
-							className={styles.input}
-							type='textarea'
-							placeholder='type a comment'
-							onChange={(e: any) => setTextarea(e.target.value)}
-						/>
-						<button
-							type='submit'
-							className={styles.submitBtn}
-						>
-							submit
-						</button>
-					</form>
-				</div>
+						submit
+					</button>
+				</form>
 			</div>
 		</main>
 	)
