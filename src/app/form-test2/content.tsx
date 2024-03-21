@@ -33,7 +33,6 @@ export default function Content() {
 
 				<Link href={'/'}>/main-page</Link>
 
-				<p id='validationPassedId' style={{display: 'block'}}>{validationPassed ? 'validation passed' : ''}</p>
 
 					<form
 						autoComplete=''
@@ -43,6 +42,8 @@ export default function Content() {
 						`}
 						onSubmit={submitHandler}
 					>
+						<div id='validationPassedId' className={validationPassed ? styles.pixel : styles.invisible} />
+
 						<input
 							className={styles.input}
 							type='email'
