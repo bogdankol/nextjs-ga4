@@ -32,7 +32,10 @@ export default function Content() {
 
 					<form
 						autoComplete=''
-						className={styles.form + validationPassed ? styles.validationPassed : ''}
+						className={`
+							${styles.form}
+							${validationPassed ? styles.validationPassed : ''}
+						`}
 						onSubmit={submitHandler}
 					>
 						<input
