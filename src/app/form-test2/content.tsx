@@ -26,7 +26,7 @@ export default function Content() {
 		<main className={styles.main}>
 			<div className={clsx(
 					styles.description, 
-					validationPassed ? styles.validationPassed : ''
+					validationPassed ? styles.validationPassed : styles.validationNotPassed
 				)}>
 				<button>button to track 1</button>
 				<button>button to track 2</button>
