@@ -33,7 +33,7 @@ export default function Content() {
 
 				<Link href={'/'}>/main-page</Link>
 
-				<p style={{display: 'block'}}>{validationPassed ? 'validation passed' : ''}</p>
+				<p id='validationPassedId' style={{display: 'none'}}>{validationPassed ? 'validation passed' : ''}</p>
 
 					<form
 						autoComplete=''
