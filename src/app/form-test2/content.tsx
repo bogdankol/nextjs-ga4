@@ -27,12 +27,12 @@ export default function Content() {
 
 				<Link href={'/'}>/main-page</Link>
 
-				{/* <form
+				<form
 					autoComplete=''
 					className={styles.form}
 					onSubmit={submitHandler}
 				>
-					<input
+					{/* <input
 						className={styles.input}
 						type='email'
 						placeholder='type an email'
@@ -56,7 +56,7 @@ export default function Content() {
 					>
 						submit
 					</button>
-				{/* </form> */}
+				</form>
 			</div>
 		</main>
 	)
