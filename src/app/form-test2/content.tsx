@@ -35,7 +35,7 @@ export default function Content() {
 					className={styles.form}
 					onSubmit={submitHandler}
 				>
-					{/* <input
+					<input
 						className={styles.input}
 						type='email'
 						placeholder='type an email'
@@ -52,7 +52,7 @@ export default function Content() {
 						type='textarea'
 						placeholder='type a comment'
             onChange={(e: any) => setTextarea(e.target.value)}
-					/> */}
+					/>
 					<button
 						type='submit'
 						className={styles.submitBtn}
