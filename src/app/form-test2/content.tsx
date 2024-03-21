@@ -2,14 +2,17 @@
 import styles from './page.module.css'
 import Link from 'next/link'
 import { ChangeEvent, useState } from 'react'
+import { clsx } from 'clsx'
 
 export default function Content() {
 	const [email, setEmail] = useState<string>()
 	const [password, setPassword] = useState<string>()
 	const [textarea, setTextarea] = useState<string>()
+	const [validationPassed, setValidationPassed] = useState<boolean>(false)
 
 	const validate = () => {
     if(!email || !password || !textarea) throw Error('some fields are not filled')
+		setValidationPassed(!validationPassed)
   }
 
 	const submitHandler = (e: { preventDefault: Function }) => {
@@ -21,7 +24,7 @@ export default function Content() {
 
 	return (
 		<main className={styles.main}>
-			<div className={styles.description}>
+			<div className={clsx(styles.description, validationPassed && styles.validationPassed)}>
 				<button>button to track 1</button>
 				<button>button to track 2</button>
 
