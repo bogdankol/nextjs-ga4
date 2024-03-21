@@ -11,8 +11,11 @@ export default function Content() {
 	const [validationPassed, setValidationPassed] = useState<boolean>(false)
 
 	const validate = () => {
-    if(!email || !password || !textarea) throw Error('some fields are not filled')
-		setValidationPassed(!validationPassed)
+    if(!email || !password || !textarea) {
+			setValidationPassed(false)
+			throw Error('some fields are not filled')
+		}
+		setValidationPassed(true)
   }
 
 	const submitHandler = (e: { preventDefault: Function }) => {
