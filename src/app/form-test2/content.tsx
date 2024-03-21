@@ -30,10 +30,9 @@ export default function Content() {
 
 				<Link href={'/'}>/main-page</Link>
 
-				<div className={validationPassed ? styles.validationPassed : ''}>
 					<form
 						autoComplete=''
-						className={styles.form}
+						className={styles.form + validationPassed ? styles.validationPassed : ''}
 						onSubmit={submitHandler}
 					>
 						<input
@@ -61,7 +60,6 @@ export default function Content() {
 							submit
 						</button>
 					</form>
-				</div>
 			</div>
 		</main>
 	)
